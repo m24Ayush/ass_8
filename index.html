@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <form id="myForm">
+                    <h2 style="color: red;">Create Account</h2>
+                    <h3>Name :</h3>
+                    <div class="res" >
+                        <input type="text" placeholder="First Name" name="first_name" class="input-container" id="fname">
+                        <input type="text" placeholder="Last Name" name="last_name" class="input-container" id="lname">
+                    </div>
+
+                    <h3>Email & Password :</h3>
+                    <div class="res" >
+                        <input type="email" placeholder="Email" name="email" class="input-container" id="email">
+                        <input type="password" placeholder="Password" name="password" class="input-container" id="pass">
+                    </div>
+                    <h3>Phone Number :</h3>
+                    <div class="res" >
+                        <input type="tel" placeholder="Phone Number" title="Only numbers are allowed" name="phone_number" class="input-container" id="phoneno">
+                    </div>
+
+                    <div class="res">
+                        <input id="checkbox" type="checkbox">
+                        <label for="checkbox"> I agree to these Terms and Conditions</label>
+                    </div>
+
+                    <div>
+                        <input class="submit" type="submit" name="Submit">
+                    </div>
+                    
+                </form>
+                <div id="errormsg"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

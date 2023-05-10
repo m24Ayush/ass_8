@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+h2 {
+
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    color: #a5daf7;
+  
+}
+
+h3 {
+    text-align: left;
+    margin: 14px 22px;
+    font-size: 20px;
+    font-family: 'Castoro Titling', cursive;
+    color: white;
+}
+
+form {
+    padding-top: 8px;
+}
+
+body {
+    background: linear-gradient(to top, #1c1c7b, #1CB5E0);
+    /* background-color: #4158D0; */
+
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* background: linear-gradient(35deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); */
+    background: linear-gradient(to bottom, #000046, #1CB5E0);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.37);
+
+}
+
+.input-container {
+    margin: 4px 20px;
+    padding: 3px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1.5px solid black;
+    font-family: cursive;
+}
+
+.submit {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0px 10px;
+    padding-top: 5px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: 'Castoro Titling', cursive;
+    letter-spacing: 0.2px;
+    background: transparent;
+    border: 1px solid black;
+    color: white;
+
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: #bad8e8;
+    color: black;
+}
+
+::placeholder {
+    color: white;
+}
+
+.res {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#checkbox {
+    margin: 20px 15px;
+    height: 20px;
+    width: 20px;
+}
+
+.res label {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-right: -40px;
+    color: white;
+    font-weight: 700;   
+}
+
+#errormsg{
+    color: red;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: white;
+
+    
+}
+
+
+@media(max-width:650px) {
+    .box {
+        width: 20rem;
+        margin-top: 370px;
+    }
+    .input-container {
+        padding: 0px 20px;
+        width: 250px;
+    }
+    body{
+        height: 200vh;
+    }
+}
+
+
+@media(max-width:345px) {
+    .input-container {
+        padding: 0px 20px;
+        width: 155px;
+    }
+
+    .box {
+        width: 240px;
+        text-align: center;
+        margin-top: 300px;
+
+    }
+
+    body {
+        height: 200vh;
+    }
+
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0px 0px 10px rgb(22, 138, 184);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #70A2C3;
+    border-radius: 55px;
+}
